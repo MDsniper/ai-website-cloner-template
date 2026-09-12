@@ -1,6 +1,6 @@
 {
-  "name": "ai-website-clone-template",
-  "version": "0.3.1",
+  "name": "project",
+  "version": "1.0.0",
   "private": true,
   "description": "Clone any website into a clean, modern Next.js codebase using AI coding agents",
   "author": "JCodesMore",
@@ -27,12 +27,7 @@
     "node": ">=24"
   },
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint",
-    "typecheck": "tsc --noEmit",
-    "check": "npm run lint && npm run typecheck && npm run build"
+    "postinstall": "git config core.hooksPath .githooks && chmod +x .githooks/*"
   },
   "dependencies": {
     "@base-ui/react": "^1.3.0",
